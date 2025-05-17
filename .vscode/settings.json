@@ -55,5 +55,18 @@
   "C_Cpp_Runner.useLeakSanitizer": false,
   "C_Cpp_Runner.showCompilationTime": false,
   "C_Cpp_Runner.useLinkTimeOptimization": false,
-  "C_Cpp_Runner.msvcSecureNoWarnings": false
+  "C_Cpp_Runner.msvcSecureNoWarnings": false,
+  // Make clangd the default formatter for C and C++ files
+  "[cpp]": {
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+    "editor.formatOnSave": true // Optional: format when you save the file
+  },
+  "[c]": {
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+    "editor.formatOnSave": true // Optional: format when you save the file
+  },
+  // Optional: also format on type (can be performance intensive for some)
+  "editor.formatOnType": true,
+  // Optional: also format on paste
+  "editor.formatOnPaste": true,
 }
